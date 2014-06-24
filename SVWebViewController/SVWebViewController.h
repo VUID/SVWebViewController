@@ -10,6 +10,8 @@
 
 @interface SVWebViewController : UIViewController
 
+@property (nonatomic, strong) UIColor *toolbarIconTintColor;
+
 - (id)initWithAddress:(NSString*)urlString;
 - (id)initWithURL:(NSURL*)URL;
 - (id)initWithRequest:(NSURLRequest *)request;

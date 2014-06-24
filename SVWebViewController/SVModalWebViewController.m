@@ -49,6 +49,7 @@
     
     self.webViewController.title = self.title;
     self.navigationBar.tintColor = self.barsTintColor;
+	self.webViewController.toolbarIconTintColor = self.toolbarIconTintColor;
 }
 
 @end

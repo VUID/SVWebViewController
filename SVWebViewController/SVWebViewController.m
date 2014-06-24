@@ -137,6 +137,7 @@
                                                             target:self
                                                             action:@selector(goBackClicked:)];
 		_backBarButtonItem.width = 18.0f;
+		[_backBarButtonItem setTintColor:self.toolbarIconTintColor];
     }
     return _backBarButtonItem;
 }
@@ -148,6 +149,7 @@
                                                                target:self
                                                                action:@selector(goForwardClicked:)];
 		_forwardBarButtonItem.width = 18.0f;
+		[_forwardBarButtonItem setTintColor:self.toolbarIconTintColor];
     }
     return _forwardBarButtonItem;
 }
@@ -155,6 +157,7 @@
 - (UIBarButtonItem *)refreshBarButtonItem {
     if (!_refreshBarButtonItem) {
         _refreshBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadClicked:)];
+		[_refreshBarButtonItem setTintColor:self.toolbarIconTintColor];
     }
     return _refreshBarButtonItem;
 }
@@ -162,6 +165,7 @@
 - (UIBarButtonItem *)stopBarButtonItem {
     if (!_stopBarButtonItem) {
         _stopBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(stopClicked:)];
+		[_stopBarButtonItem setTintColor:self.toolbarIconTintColor];
     }
     return _stopBarButtonItem;
 }
@@ -169,6 +173,7 @@
 - (UIBarButtonItem *)actionBarButtonItem {
     if (!_actionBarButtonItem) {
         _actionBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonClicked:)];
+		[_actionBarButtonItem setTintColor:self.toolbarIconTintColor];
     }
     return _actionBarButtonItem;
 }

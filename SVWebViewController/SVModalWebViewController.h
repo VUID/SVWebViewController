@@ -12,10 +12,11 @@
 
 @interface SVModalWebViewController : UINavigationController
 
+@property (nonatomic, strong) UIColor *barsTintColor;
+@property (nonatomic, strong) UIColor *toolbarIconTintColor;
+
 - (id)initWithAddress:(NSString*)urlString;
 - (id)initWithURL:(NSURL *)URL;
 - (id)initWithRequest:(NSURLRequest *)request;
-
-@property (nonatomic, strong) UIColor *barsTintColor;
 
 @end
